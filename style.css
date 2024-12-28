@@ -1,0 +1,337 @@
+/* header part */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0px 5px 15px rgba(red, green, blue, alpha);
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}/* Styling the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Style for search icon (optional) */
+.search-container button i {
+    font-size: 18px;
+    color: #333;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+.bar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.2s ease;
+}
+.bar li a:hover,
+.bar li a.active{
+    color: #088178;
+}
+.bar li a.active::after,
+.bar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#088178 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* features part  */
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 150px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+#feature .fe-box img:hover{
+     transform: scale(1.1); /* Zoom effect */
+     filter: brightness(100%);
+}
+
+#feature .fe-box:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:#088178 ;
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: #d8d21c;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #a7d0f1;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #9aed9d;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: #d2cae3;
+}
+
+/* products part */
+
+#product1{
+    text-align: center;
+
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce760;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(22, 20, 20, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    background-color: rgb(255, 232, 237);
+}
+#product1 .pro:hover{
+    box-shadow: 5px 5px 2px;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro img:hover{
+    transform: scale(1.1); /* Zoom effect */
+     filter: brightness(100%);
+}
+#product1 .pro .des{
+    text-align: start;
+    padding:10px 0px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des .star i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* Agro Farming */
+
+#agro h1{
+    text-align: center;
+}
+#agro .content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+}
+#agro .text{
+    padding: 6px 6px;
+    flex: 1;
+}
+#agro .text h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(61, 60, 60);
+}
+#agro .text h3{
+    font-size: 1.5em;
+    color: green; /* Green text for subtitle */
+    margin: 5px 0;
+}
+#agro .text pre{
+    padding: 0px;
+    white-space: pre-wrap; /* Allows wrapping inside <pre> */
+    font-size: 20px;
+    color: #555; /* Slightly muted text color */
+}
+#agro .content .text a{
+    text-decoration: none;
+}
+#agro .content .text a:hover{
+    color: red;
+   text-decoration: underline;
+}
+#agro .text img{
+    max-width: 100%; /*Ensures responsiveness*/
+    height: auto;
+    border: 1px solid #ddd; /* Optional border for better aesthetics */
+    border-radius: 5px; /* Slight rounding for the edges */
+}
+ #agro .text img:hover{
+    transition: ease-in;
+    transition-duration: 20ms;
+    box-shadow: 5px 5px 3px black;
+ }
+ #agro .text pre{
+    color: black;
+    font-size: 15px;
+    
+ }
+ /* footer part start here */
+ footer{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    
+ }
+ footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+ }
+ footer .logo{
+    margin-bottom: 30px; 
+ }
+ footer h4{
+    font: size 15px;
+    padding-bottom: 10px;
+
+ }
+ footer p{
+    font-size: 15px;
+    padding-bottom:0 0 8px 0;
+ }
+ footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+
+ }
+ footer .follow{
+    color: #0a0a0a;
+    padding-right: 4px;
+    cursor: pointer;
+ }
+ footer .install .row img {
+    border:1px solid#088178;    
+    border-radius: 6px;      
+    cursor: pointer;                                              ;
+
+ }
+ footer .install img{
+    margin: 10px 0 15px 0 ;
+ }
+ footer .follow i:hover,
+ footer a:hover{
+    color:#088178;
+
+ }
+ footer .icon i{
+    padding: 6px ;
+ }
+ footer .install{
+    cursor: pointer;
+ }
+ .install p{
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+
+
+ /* cart  */
+ /* Cart count badge */
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.cart-count {
+    display: inline-block;
+}
